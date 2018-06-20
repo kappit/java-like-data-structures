@@ -1,6 +1,9 @@
 {
     "name": "kappit/java-like-data-structures",
+    "type": "library",
     "description": "A library containing data structures based on some data structures from the Java library.",
+    "keywords": ["data structures"],
+    "license": "MIT",
     "authors": [
         {
             "name": "kappit",
