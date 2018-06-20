@@ -5,6 +5,7 @@
     "keywords": ["data structures"],
     "license": "MIT",
     "minimum-stability": "stable",
+    "version": "1.2.0",
     "authors": [
         {
             "name": "kappit",
