@@ -4,6 +4,7 @@
     "description": "A library containing data structures based on some data structures from the Java library.",
     "keywords": ["data structures"],
     "license": "MIT",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "kappit",
