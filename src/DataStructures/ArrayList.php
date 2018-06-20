@@ -59,11 +59,11 @@ class ArrayList extends AbstractList implements Listable
             return $this->removeByIndex($arguments[0]);
             break;
           default:
-            throw new TypeError($this->wrongType(1, 'object or integer', gettype($arguments[0]), __CLASS__, 'remove()'));
+            throw new \TypeError($this->wrongType(1, 'object or integer', gettype($arguments[0]), __CLASS__, 'remove()'));
         }
         break;
       default:
-        throw new Error($this->undefinedMethod(__CLASS__, $methodName));
+        throw new \Error($this->undefinedMethod(__CLASS__, $methodName));
     }
   }
 
@@ -105,7 +105,7 @@ class ArrayList extends AbstractList implements Listable
 
   public function toArray(): array
   {
-    return (new ArrayObject($this->elementData))->getArrayCopy();
+    return (new \ArrayObject($this->elementData))->getArrayCopy();
   }
 
   public function get(int $index): object
@@ -228,7 +228,7 @@ class ArrayList extends AbstractList implements Listable
   private function instanceCheck(?object $element): void
   {
     if ($element !== null && !$element instanceof $this->E) {
-      throw new TypeError($this->notInstanceOfMsg(get_class($element)));
+      throw new \TypeError($this->notInstanceOfMsg(get_class($element)));
     }
   }
 

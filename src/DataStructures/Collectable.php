@@ -7,7 +7,7 @@ declare(strict_types = 1);
 
 namespace Kappit\JavaLikeDataStructures\DataStructures;
 
-interface Collectable extends Iterator
+interface Collectable extends \Iterator
 {
 
   function size(): int;
